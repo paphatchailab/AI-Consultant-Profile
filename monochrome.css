@@ -1,0 +1,111 @@
+/* Monochrome editorial direction, inspired by the supplied reference. */
+:root{--ink:#141414;--muted:#656565;--paper:#fff;--tint:#f4f4f3;--line:#dededc;--dark:#121313;--lime:#fff;--white:#f7f7f5}
+body{background:#fff;color:#141414}
+.site-header{background:rgba(255,255,255,.96);border-color:#e5e5e5}
+.wordmark span,.eyebrow{color:#717171}
+.nav-links a:hover,.nav-links a[aria-current]{color:#777}
+.nav-links .nav-contact{background:#171717;color:white;border-radius:0}
+.nav-links .nav-contact:hover{background:#363636}
+.profile-hero{background:#f5f5f4;color:#111;padding:0;border:0}
+.profile-hero::before{display:none}
+.profile-grid{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;align-items:stretch}
+.profile-grid>div:first-child{padding:62px 0 54px;position:relative;z-index:1}
+.profile-hero .eyebrow{color:#777;font-size:9px;letter-spacing:3px;margin-bottom:28px;gap:16px}
+.profile-hero .eyebrow::before{width:30px;height:1px;background:#888}
+.hero-discipline{font-family:Arial,Helvetica,sans-serif;font-size:clamp(36px,4.6vw,66px);font-weight:900;line-height:1.02;letter-spacing:-3.2px;margin-bottom:25px}
+.hero-discipline>span{font-weight:400}
+.profile-hero h1{font-size:clamp(25px,2.7vw,38px);line-height:1.48;letter-spacing:-1px;font-weight:600}
+.profile-hero h1 em{color:#111;font-size:1em;margin-top:0;font-weight:600}
+.profile-hero .hero-promise{color:#626262;font-size:16px;line-height:1.85;margin-top:22px}
+.hero-promise strong{color:#242424}
+.profile-hero .consultation-note{color:#777;border-color:#b6b6b6;font-size:11px;max-width:450px;margin-top:18px}
+.profile-hero .primary{color:#fff;background:#151515;border-radius:0;min-height:50px;padding:12px 20px}
+.profile-hero .primary:hover{background:#3b3b3b}
+.profile-hero .icon-cutout{stroke:#151515}
+.profile-hero .text-link{color:#555;border-color:#aaa;font-size:11px}
+.profile-hero .text-link:hover{color:#000}
+.profile-photo{position:relative;display:block;margin:0;max-width:none;border:0;border-radius:0;box-shadow:none;overflow:hidden;background:#d3d3d3;min-height:640px}
+.profile-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;filter:none;border-radius:0}
+.profile-photo::after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(transparent,#111e);pointer-events:none}
+.profile-photo>span{position:absolute;bottom:98px;left:28px;margin:0;color:#ddd;z-index:1;letter-spacing:2px}
+.profile-photo>span::before{display:none}
+.profile-photo .consultant-name{position:absolute;bottom:29px;left:28px;right:20px;margin:0;color:white;z-index:1;font-size:22px}
+.consultant-name span{font-size:11px;color:#d2d2d2;letter-spacing:1px;margin-top:8px}
+#services{background:linear-gradient(135deg,#222323,#101111);color:white;padding:66px 0}
+#services .section-heading{margin-bottom:36px}
+#services .section-heading h2{font-size:32px}
+#services .eyebrow,#services .section-heading>p{color:#b4b4b4}
+#services .section-heading .eyebrow::before,.section-heading .eyebrow::before{background:#888}
+.engagements{gap:0}
+.engagements article{padding:0 30px;border:0;border-right:1px solid #515151;background:transparent;border-radius:0}
+.engagements article:first-child{padding-left:0}.engagements article:last-child{padding-right:0;border-right:0}
+.service-icon{display:flex;align-items:center;justify-content:center;width:62px;height:62px;border:1px solid #858585;border-radius:50%;margin-bottom:23px;color:inherit}
+.service-icon svg{width:30px;height:30px}
+#services .engagements .eyebrow{font-size:11px;letter-spacing:2px;color:white}
+.engagements h3{font-size:21px}
+#services .engagements article>p:not(.eyebrow),#services .engagements article>span:not(.service-icon){color:#bdbdbd;border-color:#414141}
+#services .engagement-note{color:#a8a8a8;font-size:12px;margin:32px 0}
+#services .process-list,#services .process-list article,#services .deliverable{border-color:#414141}
+#services .process-list h3{font-size:19px}
+#services .process-list p,#services .process-list .number,#services .training-note{color:#b5b5b5}
+#services .process-list .eyebrow{color:#969696}
+#services .process-list article{padding:24px 0}
+#services .training-note{margin-top:18px;padding-bottom:0}
+.business-start{padding-top:70px}
+.pain-list{border-radius:0}.pain-list li{color:#333}.pain-list li::before{color:#999}
+.research-panel{background:#f4f4f3;border-color:#e0e0df;border-radius:0}
+.research-heading .eyebrow,.research-heading>p:last-child,.research-stats dt,.research-source{color:#666}
+.research-stats dd{color:#171717}.research-stats>div,.research-source{border-color:#d3d3d3}
+.research-source a:hover{color:#000}
+.capabilities{background:#fff}
+.case-card,.enterprise-capability{background:#fff;color:#171717;border:0;border-left:1px solid #d7d7d7;border-radius:0;padding:0 28px;box-shadow:none}
+.case-card:first-child{border-left:0;padding-left:0}
+.case-card .number,.enterprise-capability .number{color:#777}
+.case-card h3{font-size:23px}
+.enterprise-capability>p,.enterprise-capability .card-result p{color:#656565}
+.enterprise-capability .card-result{border-color:#dededc}.enterprise-capability .card-result>span{color:#777}
+.product,.speaking-card,.certificate{border-radius:0}
+.product-screenshot,.product:nth-child(n) .product-screenshot{background:#ededeb}
+.product-screenshot img{border-radius:0}.product-link,.project-list .project-company,.tl-role{color:#555}
+.product-copy h3 span{border-radius:0}
+.product:hover{box-shadow:0 12px 25px #0000000c}
+.tinted{background:#f4f4f3}
+.tl-period{background:#eee;color:#666}.timeline-dot{background:#444}
+.speaking-video{background:#181919;border-radius:0}
+.speaking-video-copy .eyebrow{color:#ccc}.speaking-video-copy>p:not(.eyebrow){color:#bbb}
+.speaking-half figcaption>.eyebrow{color:#777}
+.contact{background:#151616;color:white;border:0}
+.contact .eyebrow{color:#b0b0b0}
+.contact-grid>div:not(.contact-panel)>p:not(.eyebrow){color:#bbb}
+.contact-panel{border:1px solid #484848;border-radius:0;background:#1c1d1d}
+.contact-panel>p{color:#aaa}.contact-panel .primary{background:white;color:#111;border-radius:0}
+.contact-panel .primary .icon-cutout{stroke:white}
+.secondary{border-color:#666;border-radius:0}.secondary:hover{background:#333}
+.footer{background:#fff}.footer .wordmark{color:#111}
+.text-link:hover{color:#888}
+:focus-visible{outline-color:#888}
+@media(min-width:761px) and (max-width:1050px){.profile-grid{gap:28px}.hero-discipline{font-size:43px;letter-spacing:-2px}.profile-hero h1{font-size:28px}.profile-photo{min-height:650px}.profile-photo .consultant-name{font-size:18px;left:20px}.profile-photo>span{left:20px}.engagements article{padding-inline:22px}}
+@media(max-width:760px){
+ .nav-links{background:#fff}.menu-toggle{color:#111;border-color:#ccc;border-radius:0}
+ .profile-grid{grid-template-columns:1fr;gap:0}
+ .profile-grid>div:first-child{padding:38px 0 30px}
+ .profile-hero .eyebrow{font-size:7px;letter-spacing:1.7px;margin-bottom:25px}
+ .hero-discipline{font-size:clamp(30px,8.5vw,56px);letter-spacing:-1.7px;margin-bottom:22px}
+ .profile-hero h1{font-size:clamp(25px,6.4vw,34px)}
+ .profile-hero .hero-promise{font-size:15px;margin-top:19px}
+ .profile-hero .consultation-note{font-size:11px}
+ .profile-photo{min-height:370px;max-width:none;width:100%;margin:0}
+ .profile-photo img{height:100%;width:100%;object-position:center 24%}
+ .profile-photo>span{left:22px;bottom:91px;font-size:8px}
+ .profile-photo .consultant-name{left:22px;bottom:26px;font-size:21px}
+ .consultant-name span{font-size:10px}
+ #services{padding:48px 0}#services .section-heading h2{font-size:28px}
+ .engagements{gap:26px}.engagements article,.engagements article:first-child,.engagements article:last-child{padding:0 0 26px;border:0;border-bottom:1px solid #444}
+ .service-icon{width:52px;height:52px;margin-bottom:18px}.service-icon svg{width:26px;height:26px}
+ .business-start{padding-top:48px}
+ .case-card,.case-card:first-child{padding:0 0 28px;border:0;border-bottom:1px solid #ddd}
+ .capabilities .cards{gap:28px}
+ .research-stats>div,.research-stats>div:first-child{border-color:#d3d3d3}
+}
+/* Keep supporting copy legible on the dark service surface. */
+#services .training-note p{color:#b5b5b5}

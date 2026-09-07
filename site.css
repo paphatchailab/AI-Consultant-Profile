@@ -75,7 +75,7 @@ a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-w
 .engagements .eyebrow{margin-bottom:12px;color:#506936}
 .engagements h3{font-size:20px;margin-bottom:14px}
 .engagements article>p:not(.eyebrow){font-size:14px;color:var(--muted)}
-.engagements article>span{display:block;margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:#43563b}
+.engagements article>span:not(.service-icon){display:block;margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:#43563b}
 .engagement-note{font-size:14px;color:var(--muted);margin:22px 0 40px}
 @media(max-width:760px){.engagements{grid-template-columns:minmax(0,1fr)}.profile-hero h1{font-size:clamp(28px,7vw,40px)}}
 .speaking-vbac{grid-column:1 / -1}
@@ -155,7 +155,7 @@ h2{font-size:clamp(28px,3vw,42px);line-height:1.5}
 .tinted{background:#f0f2ec}
 .engagements article{border-radius:18px;border-color:#dce2d6;background:#fbfcf8;padding:28px}
 .engagements h3{font-size:21px}
-.engagements article>span{color:#4d6942}
+.engagements article>span:not(.service-icon){color:#4d6942}
 .process-list{margin-top:12px}
 .process-list article{padding:30px 0}
 .process-list .number{font-size:16px;color:#6a8259}
