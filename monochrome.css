@@ -109,3 +109,14 @@ body{background:#fff;color:#141414}
 }
 /* Keep supporting copy legible on the dark service surface. */
 #services .training-note p{color:#b5b5b5}
+
+/* Training topics use a complete card grid rather than column dividers. */
+#courses .cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+#courses .case-card,#courses .case-card:first-child{display:flex;flex-direction:column;min-width:0;padding:28px;border:1px solid var(--line);background:#fff}
+#courses .case-card .number{display:block;width:auto;height:auto;min-width:0;line-height:1.6;overflow-wrap:anywhere}
+#courses .case-card h3{margin:18px 0 14px;line-height:1.5;overflow-wrap:anywhere}
+#courses .case-card>p{margin:0 0 16px}
+#courses .card-result{margin-top:auto;padding-top:20px}
+#courses .card-result p{margin-top:8px}
+@media(min-width:761px) and (max-width:1050px){#courses .cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){#courses .cards{grid-template-columns:minmax(0,1fr);gap:18px}#courses .case-card,#courses .case-card:first-child{padding:24px}}
