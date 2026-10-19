@@ -29,3 +29,5 @@ Logos identify tools used as course examples. No endorsement is implied.
 - openai: https://raw.githubusercontent.com/paphatchailab/AI-Consultant-Profile/main/image/logos/chatgpt.png
 
 Simple Icons: https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md
+
+- copilot: https://unpkg.com/@lobehub/icons-static-svg@latest/icons/copilot-color.svg
